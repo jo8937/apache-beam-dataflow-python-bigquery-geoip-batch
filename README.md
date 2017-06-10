@@ -18,14 +18,14 @@ python geoip_mapper.py googleProjectId src_dataset src_tablename dest_dataset de
  
 ### Source Table 
 
-| IP             |  accessTime              |
+| ip             |  accessTime              |
 |----------------|--------------------------|  
 | 112.175.60.132 | 2017-06-10 17:51:46 UTC  |
 | 216.58.197.206 | 2017-06-10 18:12:26 UTC  |
 
 ### Result Table
 
-| IP             |  accessTime              |  GeoIpCountry  |
+| ip             |  accessTime              |  GeoIpCountry  |
 |----------------|--------------------------|----------------|
 | 112.175.60.132 | 2017-06-10 17:51:46 UTC  |  KR            |
 | 216.58.197.206 | 2017-06-10 18:12:26 UTC  |  US            |
