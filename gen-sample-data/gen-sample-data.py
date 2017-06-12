@@ -64,6 +64,7 @@ def run(projectId, src_dataset, src_tablename, dest_dataset, dest_tablename, gcs
     
     options.view_as(StandardOptions).runner = 'DataflowRunner'
     
+    
     with beam.Pipeline(options=options) as p:
         rows = (p | 'ReadBQ' >> beam.io.Read(beam.io.BigQuerySource(table=src_tablename, dataset=src_dataset))
                 | 'GeoIP' >> beam.ParDo(GeoIpFn())
