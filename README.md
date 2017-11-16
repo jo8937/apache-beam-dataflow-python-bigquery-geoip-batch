@@ -1,4 +1,4 @@
-# dataflow-batch-snippets
+# bigquery table ip to country dataflow batch
 
 python script use apache-beam and Google Cloud Platform Dataflow.
 
